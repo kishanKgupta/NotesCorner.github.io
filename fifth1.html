@@ -44,6 +44,10 @@
           <p>3.Communication Notes 2</p>
           <a href="#" onclick="openfile3()"><p class="page-1">Download</p></a>
         </div>
+        <div class="page">
+          <p>4.Previous Year Paper</p>
+          <a href="#" onclick="openfile4()"><p class="page-1">Download</p></a>
+        </div>
         <!-- <div class="page">
           <p>4.SOFTWARE ENGINEERING minor exam paper</p>
           <a href="#" onclick="openfile4()"><p class="page-1">Download</p></a>
@@ -65,25 +69,32 @@
 
     <center>
       <object
-        data="/pc/communication.pdf"
+        data="communication.pdf"
         type="Application/pdf"
         width="0"
         height="0"
         class="file1"
       ></object>
       <object
-        data="/pc/group discussion.pdf"
+        data="group discussion.pdf"
         type="Application/pdf"
         width="0"
         height="0"
         class="file2"
       ></object>
       <object
-        data="/pc/principles of communication.pdf"
+        data="principles of communication.pdf"
         type="Application/pdf"
         width="0"
         height="0"
         class="file3"
+      ></object>
+       <object
+        data="pyq mca.pdf"
+        type="Application/pdf"
+        width="0"
+        height="0"
+        class="file4"
       ></object>
       <!-- <object
         data="/se/SOFTWARE ENGINEERING minor exam paper.pdf"
@@ -128,11 +139,11 @@
         document.querySelector(".file3").style.height = "100vh";
         document.querySelector(".file3").style.width = "100%";
       }
-      // function openfile4() {
-      //   document.querySelector(".container").style.display = "none";
-      //   document.querySelector(".file2").style.height = "100vh";
-      //   document.querySelector(".file2").style.width = "100%";
-      // }
+      function openfile4() {
+        document.querySelector(".container").style.display = "none";
+        document.querySelector(".file4").style.height = "100vh";
+        document.querySelector(".file4").style.width = "100%";
+      }
       // function openfile5() {
       //   document.querySelector(".container").style.display = "none";
       //   document.querySelector(".file2").style.height = "100vh";
