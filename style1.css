@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  /* background: #fff; */
+  color: #000;
+}
+.heading h1 {
+  text-align: center;
+  background-color: rgb(217, 224, 226);
+  padding: 20px;
+}
+.p-logo {
+  color: rgb(0, 208, 255);
+}
+.p-logo span {
+  color: #000000;
+}
+.header {
+  width: 100%;
+  height: 80px;
+  border: 1.4px solid black;
+  /* box-shadow: 5px 10px 50px #888888; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  font-weight: bolder;
+}
+.logo i {
+  font-size: 30px;
+  color: rgb(1, 1, 112);
+}
+.logo-name {
+  font-size: 10px;
+}
+.logo-name-first {
+  font-size: 20px;
+}
+.header img {
+  width: 60px;
+  height: 60px;
+}
+.heading {
+  text-align: center;
+  background-color: rgb(217, 224, 226);
+  padding: 20px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(227, 227, 227);
+  font-size: larger;
+  font-weight: bolder;
+  margin-top: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.page a {
+  text-decoration: none;
+  color: black;
+  padding: 20px;
+}
+.page a p {
+  padding: 12px 15px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  background-color: rgba(0, 208, 255, 0.581);
+  width: fit-content;
+  border: 1px solid rgba(0, 0, 0, 0.581);
+  border-radius: 6px;
+  text-decoration: none;
+  color: #000000;
+  font-size: 10px;
+}
+
+.feedback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(217, 224, 226);
+  margin-top: 20px;
+  border-top: 1px solid #888888;
+}
+.contact form {
+  width: 100%;
+}
+form input,
+form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background-color: rgb(227, 227, 227);
+  padding: 15px;
+  margin: 25px 0;
+  color: #1b1b1b;
+  font-size: 18px;
+  border-radius: 6px;
+}
+form textarea {
+  height: 60px;
+}
+.btn {
+  background-color: rgba(0, 208, 255, 0.581);
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  width: fit-content;
+  border: 1px solid rgba(0, 0, 0, 0.581);
+  padding: 12px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #000000;
+  cursor: pointer;
+  font-weight: 300;
+}
+.feedback h2 {
+  margin-top: 10px;
+}
+br {
+  margin-bottom: 1px;
+}
+.footer {
+  width: 100%;
+  height: 40px;
+  border: 1.4px solid black;
+  box-shadow: 5px 10px 50px #888888;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+@media only screen and (max-width: 500px) {
+  .logo i {
+    font-size: 20px;
+  }
+  .p-logo {
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  .header {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .header img {
+    width: 35px;
+    height: 35px;
+  }
+  .heading h1 {
+    font-size: 18px;
+  }
+  .heading h2 {
+    font-size: 16px;
+  }
+  .logo-name {
+    font-size: 7px;
+  }
+  .logo-name-first {
+    font-size: 15px;
+  }
+
+  form input,
+  form textarea {
+    margin: 15px 0;
+  }
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NotesCorner</title>
+    <link rel="stylesheet" href="style1.css" />
+    <script
+      src="https://kit.fontawesome.com/60d5195beb.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <i class="fa-solid fa-pen-nib"></i>
+        <h1 class="p-logo">Notes<span>Corner</span></h1>
+      </div>
+
+      <div class="logo">
+        <img src="./img.png" alt="MMMUT LOGO" />
+        <div class="logo-name">
+          <p class="logo-name-first">MMMUT</p>
+          <p>GORAKHPUR U.P, INDIA</p>
+          <p>NAAC Grade 'A' University</p>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="heading">
+        <center><h1>1.Professional Communication</h1></center>
+      </div>
+      <hr />
+      <div class="container">
+        <div class="page">
+          <p>1.Communication Notes</p>
+          <a href="#" onclick="openfile1()"><p class="page-1">Download</p></a>
+        </div>
+        <div class="page">
+          <p>2.Group Discussion book Notes</p>
+          <a href="#" onclick="openfile2()"><p class="page-1">Download</p></a>
+        </div>
+        <div class="page">
+          <p>3.Communication Notes 2</p>
+          <a href="#" onclick="openfile3()"><p class="page-1">Download</p></a>
+        </div>
+        <!-- <div class="page">
+          <p>4.SOFTWARE ENGINEERING minor exam paper</p>
+          <a href="#" onclick="openfile4()"><p class="page-1">Download</p></a>
+        </div>
+        <div class="page">
+          <p>5.SE book</p>
+          <a href="#" onclick="openfile5()"><p class="page-1">Download</p></a>
+        </div> -->
+        <!-- <div class="page">
+          <p>5.DBMS Books</p>
+          <a href="#" onclick="openfile6()"><p class="page-1">Download</p></a>
+        </div>  -->
+        <!-- <div class="page">
+          <p>5.C++ book2</p>
+          <a href="#" onclick="openfile7()"><p class="page-1">Download</p></a>
+        </div> -->
+      </div>
+    </div>
+
+    <center>
+      <object
+        data="/pc/communication.pdf"
+        type="Application/pdf"
+        width="0"
+        height="0"
+        class="file1"
+      ></object>
+      <object
+        data="/pc/group discussion.pdf"
+        type="Application/pdf"
+        width="0"
+        height="0"
+        class="file2"
+      ></object>
+      <object
+        data="/pc/principles of communication.pdf"
+        type="Application/pdf"
+        width="0"
+        height="0"
+        class="file3"
+      ></object>
+      <!-- <object
+        data="/se/SOFTWARE ENGINEERING minor exam paper.pdf"
+        type="Application/pdf"
+        width="0"
+        height="0"
+        class="file4"
+      ></object>
+      <object
+        data="/se/Software-Engineering-9th-Edition-by-Ian-Sommerville.pdf"
+        width="0"
+        height="0"
+        class="file5"
+      ></object> -->
+      <!-- <object
+        data="/c++/complete notes book.pdf"
+        type="Application/pdf"
+        width="0"
+        height="0"
+        class="file7"
+      ></object> -->
+    </center>
+
+    <div class="footer">
+      <p class="footer-text">Created By MCA 2023-Batch</p>
+    </div>
+
+    <!-- javaScript file -->
+    <script>
+      function openfile1() {
+        document.querySelector(".container").style.display = "none";
+        document.querySelector(".file1").style.height = "100vh";
+        document.querySelector(".file1").style.width = "100%";
+      }
+      function openfile2() {
+        document.querySelector(".container").style.display = "none";
+        document.querySelector(".file2").style.height = "100vh";
+        document.querySelector(".file2").style.width = "100%";
+      }
+      function openfile3() {
+        document.querySelector(".container").style.display = "none";
+        document.querySelector(".file3").style.height = "100vh";
+        document.querySelector(".file3").style.width = "100%";
+      }
+      // function openfile4() {
+      //   document.querySelector(".container").style.display = "none";
+      //   document.querySelector(".file2").style.height = "100vh";
+      //   document.querySelector(".file2").style.width = "100%";
+      // }
+      // function openfile5() {
+      //   document.querySelector(".container").style.display = "none";
+      //   document.querySelector(".file2").style.height = "100vh";
+      //   document.querySelector(".file2").style.width = "100%";
+      // }
+      // function openfile6() {
+      //   document.querySelector(".container").style.display = "none";
+      //   document.querySelector(".file2").style.height = "100vh";
+      //   document.querySelector(".file2").style.width = "100%";
+      // }
+      // function openfile7() {
+      //   document.querySelector(".container").style.display = "none";
+      //   document.querySelector(".file2").style.height = "100vh";
+      //   document.querySelector(".file2").style.width = "100%";
+      // }
+    </script>
+  </body>
+</html>

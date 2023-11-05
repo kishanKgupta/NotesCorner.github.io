@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NotesCorner</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/60d5195beb.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <i class="fa-solid fa-pen-nib"></i>
+        <h1 class="p-logo">Notes<span>Corner</span></h1>
+      </div>
+
+      <div class="logo">
+        <img src="img.png" alt="MMMUT LOGO" />
+        <div class="logo-name">
+          <p class="logo-name-first">MMMUT</p>
+          <p>GORAKHPUR U.P, INDIA</p>
+          <p>NAAC Grade 'A' University</p>
+        </div>
+      </div>
+    </div>
+    <!------------ Main----------- -->
+    <div class="main">
+      <div class="heading">
+        <h1>Master's and Computer Application</h1>
+        <h2>Notes and Exam-Paper</h2>
+      </div>
+      <hr />
+      <div class="container">
+        <div class="page">
+          <p>1.MCA First semester</p>
+          <a href="first.html"><p class="page-1">Click Here</p></a>
+        </div>
+        <div class="page">
+          <p>2.MCA Second Semester</p>
+          <a href="second.html"><p class="page-1">Click Here</p></a>
+        </div>
+        <div class="page">
+          <p>3.MCA Third Semester</p>
+          <a href="third.html"><p class="page-1">Click Here</p></a>
+        </div>
+        <div class="page">
+          <p>4.MCA Fourth Semester</p>
+          <a href="fourth.html"><p class="page-1">Click Here</p></a>
+        </div>
+      </div>
+
+      <div class="feedback">
+        <h2>Feedback</h2>
+        <div class="contact">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required />
+            <textarea
+              name="Message"
+              rows="6"
+              placeholder="Your Feedback"
+            ></textarea>
+            <!-- <input type="file" name="File" placeholder="Send Your Notes" /> -->
+            <button type="submit" class="btn">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p class="footer-text">Created By MCA 2023-Batch</p>
+      <p>(Kishan Gupta)</p>
+    </div>
+    <!-- script file -->
+    <script>
+      const scriptURL = "<SCRIPT URL>";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            msg.style.color = " rgb(0, 208, 255)";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 4000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <script>
+      const scriptURL1 =
+        "https://script.google.com/macros/s/AKfycbw4pVZDCkNNlqKLbA7uAzcz4Akm8mjgeNLX-0JXqM658ZL2zVadP4ZzHa_JsL2QDc8L/exec";
+      const form1 = document.forms["submit-to-google-sheet"];
+
+      form1.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL1, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!", response))
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
